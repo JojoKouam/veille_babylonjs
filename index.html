@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de Babylon.js</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f0f0f0; /* Fond clair */
+            color: #333; /* Couleur de texte sombre */
+        }
+        header {
+            background: #344c5c; /* Couleur de fond du header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #e9ecef; /* Fond légèrement assombri */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            color: #007acc; /* Couleur de titre */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            color: #333; /* Couleur de texte dans le tableau */
+        }
+        th {
+            background-color: #007acc; /* Couleur d'arrière-plan des en-têtes de tableau */
+            color: #fff; /* Couleur de texte pour les en-têtes */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #344c5c; /* Couleur de fond du footer */
+            color: #fff;
+        }
+        .code-block {
+            background: #f9f9f9; /* Fond clair pour le code */
+            border-left: 4px solid #007acc;
+            padding: 10px;
+            overflow-x: auto;
+            font-family: monospace;
+            color: #333; /* Couleur de texte pour le code */
+        }
+        a {
+            color: #007acc; /* Couleur des liens */
+            text-decoration: none; /* Pas de soulignement */
+        }
+        a:hover {
+            text-decoration: underline; /* Soulignement au survol */
+        }
+
+        /* Styles pour la réactivité */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            header, footer {
+                padding: 15px 0;
+            }
+            .container {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            ul, table {
+                margin-left: 10px;
+            }
+            img {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="/image/sandbox_babylonjs.jpeg" alt="Logo" style="max-width: 100px; display: block; margin: auto;">
+        <h1>Veille Technologique sur Babylon.js</h1>
+    </header>
+
+<div class="container">
+    <h2>Qu'est-ce que Babylon.js ?</h2>
+    <p>Babylon.js est une <strong>bibliothèque JavaScript</strong> open-source dédiée à la création d'applications et de jeux 3D directement dans un navigateur web. Elle permet aux développeurs de construire des expériences interactives en 3D sans nécessiter de plugins externes.</p>
+    <p>Voici quelques-unes de ses principales caractéristiques :</p>
+    <ul>
+        <li><strong>Rendu en temps réel :</strong> Permet des graphismes fluides et réalistes grâce à des techniques comme l'éclairage dynamique et les ombres.</li>
+        <li><strong>Support de divers formats de modèles 3D :</strong> Compatible avec des fichiers tels que .obj, .gltf, et bien d'autres, facilitant l'importation de ressources 3D.</li>
+        <li><strong>Optimisation pour les performances :</strong> Conçu pour fonctionner efficacement sur des appareils mobiles et de bureau.</li>
+        <li><strong>Écosystème riche :</strong> Comprend des outils et des bibliothèques pour ajouter des fonctionnalités comme la physique, les animations, et les interfaces utilisateur.</li>
+    </ul>
+    <p>Soutenu par une communauté active, Babylon.js offre une documentation complète et de nombreux exemples, rendant l'apprentissage et l'utilisation de ce moteur accessibles à tous.</p>
+    
+    <h2>Caractéristiques principales</h2>
+    <ul>
+        <li><strong>Facilité d'utilisation :</strong> API simple et intuitive.</li>
+        <li><strong>Performances :</strong> Optimisé pour des performances élevées.</li>
+        <li><strong>Richesse des fonctionnalités :</strong> Support des modèles 3D, textures, etc.</li>
+        <li><strong>Compatibilité :</strong> Fonctionne sur tous les navigateurs modernes.</li>
+        <li><strong>Communauté active :</strong> Support et ressources disponibles.</li>
+    </ul>
+
+    <h2>Utilisations courantes</h2>
+    <p>Babylon.js est utilisé dans divers domaines, notamment pour créer des jeux vidéo, des visualisations architecturales, des simulations éducatives et des applications interactives. Voici quelques exemples de jeux de simulation et d'applications interactives :</p>
+    <ul>
+        <li><a href="https://www.citiesskylines.com/" target="_blank">Cities: Skylines</a> - Un simulateur de construction de ville où vous gérez l'urbanisme.</li>
+        <li><a href="https://www.planetzoogame.com/" target="_blank">Planet Zoo</a> - Un jeu de gestion de zoo où vous construisez et gérez votre propre zoo.</li>
+        <li><a href="https://www.game-dev-tycoon.com/" target="_blank">Game Dev Tycoon</a> - Un simulateur où vous créez et gérez votre propre entreprise de développement de jeux vidéo.</li>
+        <li><a href="https://www.transportfever.com/" target="_blank">Transport Fever 2</a> - Un jeu de simulation de transport où vous construisez des réseaux de transport.</li>
+    </ul>
+    
+    <h2>Développement et Intégration</h2>
+    <p>Babylon.js s'intègre facilement dans des projets web. Voici comment l'ajouter à votre application :</p>
+
+    <h3>1. Ajouter Babylon.js à votre projet</h3>
+    <p>Vous pouvez inclure Babylon.js via un CDN ou en l'installant via npm. Voici les deux méthodes :</p>
+    
+    <h4>Via CDN</h4>
+    <div class="code-block">
+        <pre><code>&lt;script src="https://cdn.babylonjs.com/babylon.js"&gt;&lt;/script&gt;</code></pre>
+    </div>
+
+    <h4>Via npm</h4>
+    <div class="code-block">
+        <pre><code>npm install babylonjs</code></pre>
+    </div>
+
+    <h3>2. Créer une scène de base</h3>
+    <p>Créer une scène de base dans Babylon.js signifie établir les éléments fondamentaux nécessaires pour afficher et interagir avec des objets 3D. Voici les étapes impliquées :</p>
+    
+    <h4>Étapes pour Créer une Scène de Base</h4>
+    <ol>
+        <li><strong>Initialiser le Canevas :</strong> Utilisez un élément <code>&lt;canvas&gt;</code> comme surface de rendu.</li>
+        <li><strong>Créer l'Engin Babylon.js :</strong> Initiez un moteur de rendu pour gérer l'affichage.</li>
+        <li><strong>Définir la Scène :</strong> Créez une nouvelle scène pour contenir tous les objets.</li>
+        <li><strong>Ajouter une Caméra :</strong> Définissez le point de vue à partir duquel la scène est visualisée.</li>
+        <li><strong>Ajouter une Source de Lumière :</strong> Éclairez les objets pour qu'ils soient visibles.</li>
+        <li><strong>Créer des Objets 3D :</strong> Ajoutez des formes comme des cubes ou sphères.</li>
+        <li><strong>Boucle de Rendu :</strong> Mettez en place une boucle pour redessiner la scène en continu.</li>
+    </ol>
+
+    <h4>Exemple de Code</h4>
+    <div class="code-block">
+        <pre><code>
+// Obtention du canevas et création de l'engin Babylon.js
+const canvas = document.getElementById('renderCanvas');
+const engine = new BABYLON.Engine(canvas, true);
+
+// Création de la scène
+const createScene = () => {
+    const scene = new BABYLON.Scene(engine);
+    
+    // Création d'une caméra
+    const camera = new BABYLON.ArcRotateCamera("camera", Math.PI / 2, Math.PI / 4, 5, BABYLON.Vector3.Zero(), scene);
+    camera.attachControl(canvas, true);
+
+    // Ajout d'une lumière
+    const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0), scene);
+    light.intensity = 0.7;
+
+    // Création d'un cube
+    const box = BABYLON.MeshBuilder.CreateBox("box", { size: 1 }, scene);
+    box.position.y = 0.5; // Positionner le cube pour qu'il soit au-dessus du sol
+
+    return scene;
+};
+
+// Création de la scène
+const scene = createScene();
+
+// Boucle de rendu
+engine.runRenderLoop(() => {
+    scene.render();
+});
+
+// Gestion du redimensionnement de la fenêtre
+window.addEventListener('resize', () => {
+    engine.resize();
+});
+        </code></pre>
+    </div>
+
+    <h2>Extensions et Plugins</h2>
+<p>Babylon.js offre une variété d'extensions et de plugins qui enrichissent ses fonctionnalités. Voici quelques-unes des principales extensions et où les trouver :</p>
+<ul>
+    <li><strong>Babylon.js GUI :</strong> Permet de créer des interfaces utilisateur. Vous pouvez trouver cette extension dans la documentation officielle de Babylon.js.</li>
+    <li><strong>Babylon.js Materials Library :</strong> Offre des matériaux prédéfinis pour faciliter le travail avec les textures. Disponible dans le dépôt GitHub de Babylon.js.</li>
+    <li><strong>Babylon.js Loaders :</strong> Permet d'importer des modèles 3D dans divers formats. Consultez la section des loaders dans la documentation officielle.</li>
+    <li><strong>Babylon.js Physics Engine :</strong> Intègre des moteurs de physique pour des simulations réalistes. Les informations sont disponibles sur le site de Babylon.js.</li>
+    <li><strong>Babylon.js Inspector :</strong> Outil de débogage en temps réel qui permet d'explorer les scènes et les objets. Trouvez-le dans la documentation de Babylon.js.</li>
+</ul>
+<p>Pour accéder à ces extensions, visitez le site officiel de <a href="https://www.babylonjs.com/" target="_blank">Babylon.js</a> et consultez la section des <strong>ressources</strong> ou la <strong>documentation</strong>.</p>
+
+    <h2>Suivre les Évolutions</h2>
+    <p>Babylon.js est en constante évolution. Voici quelques-unes des évolutions récentes qui améliorent ses fonctionnalités et ses performances :</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Évolution</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>WebGL 2.0 Support</td>
+                <td>Amélioration du rendu graphique.</td>
+            </tr>
+            <tr>
+                <td>WebXR</td>
+                <td>Intégration de la réalité virtuelle et augmentée.</td>
+            </tr>
+            <tr>
+                <td>WebGPU</td>
+                <td>Préparations pour de meilleures performances.</td>
+            </tr>
+            <tr>
+                <td>Améliorations des Animations</td>
+                <td>Nouvelles fonctionnalités pour les animations.</td>
+            </tr>
+            <tr>
+                <td>Optimisations de Performance</td>
+                <td>Réduction de la latence.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Retours de la Communauté</h2>
+    <p>Les retours de la communauté sont essentiels pour le développement de Babylon.js. Voici quelques aspects importants :</p>
+    <ul>
+        <li><strong>Forums et Discussions :</strong> Les utilisateurs partagent leurs expériences, posent des questions et échangent des solutions sur des forums comme <a href="https://forum.babylonjs.com/" target="_blank">le forum Babylon.js</a>.</li>
+        <li><strong>Rapport de Bugs :</strong> La communauté signale des bugs et propose des correctifs, ce qui aide à améliorer la stabilité du moteur.</li>
+        <li><strong>Exemples de Projets :</strong> De nombreux projets open-source sont partagés sur GitHub, permettant aux nouveaux utilisateurs de s'inspirer et d'apprendre.</li>
+        <li><strong>Événements et Webinaires :</strong> Des événements réguliers sont organisés pour partager les dernières fonctionnalités et répondre aux questions des développeurs.</li>
+        <li><strong>Documentation Collaborative :</strong> La documentation est souvent mise à jour grâce aux retours des utilisateurs, rendant les ressources plus accessibles et utiles.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Babylon.js est un choix puissant pour les développeurs souhaitant créer des expériences 3D sur le web.</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Présentation du groupe B de Babylon.js</p>
+</footer>
+
+</body>
+</html>
